@@ -82,6 +82,29 @@
     <li>Version control and conflict resolution</li>
   </ul>
 
+  <h2>10. Standard Identification</h2>
+  <p>All ideas/projects stored following this system must declare compliance with the <strong>Wieser Idea-Project Storage Standard (WIPSS)</strong> by including metadata with the standard name and version. This enables automated recognition, validation, and interoperability.</p>
+  <p>Example JSON-LD metadata snippet:</p>
+  <pre><code>{
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  "identifier": "Idea_Example_001",
+  "name": "Example Idea",
+  "author": {
+    "@type": "Person",
+    "name": "Martin Wieser"
+  },
+  "dateCreated": "2025-05-30",
+  "keywords": ["example", "idea", "project"],
+  "storageStandard": {
+    "@type": "DefinedTerm",
+    "name": "Wieser Idea-Project Storage Standard",
+    "version": "1.0"
+  }
+}</code></pre>
+  <p>Visible attribution is recommended, e.g.:<br/>
+  <em>This idea/project page is created following the <a href="StorageStandard.html">Wieser Idea-Project Storage Standard (WIPSS) version 1.0</a>.</em></p>
+
   <hr />
   <p><em>Maintained by Martin Wieser, Salzburg, Austria</em></p>
 </body>

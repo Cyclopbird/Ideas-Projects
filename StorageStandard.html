@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Storage and Structuring Standard for Ideas & Projects</title>
+<style>
+  body { font-family: Arial, sans-serif; margin: 40px; background: #fefefe; color: #222; line-height: 1.6; max-width: 800px; margin-left: auto; margin-right: auto; }
+  h1, h2, h3 { color: #005a9c; }
+  code { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
+  pre { background: #f0f0f0; padding: 10px; border-radius: 5px; overflow-x: auto; }
+  ul { margin-left: 20px; }
+  a { color: #007acc; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+</style>
+</head>
+<body>
+  <h1>Storage and Structuring Standard for Ideas & Projects</h1>
+  <p>This document outlines the recommended system for organizing, storing, and linking scientific ideas and projects to ensure easy discoverability, clarity, and interoperability.</p>
+  
+  <h2>1. Unique IDs</h2>
+  <p>Each idea/project must have a unique ID to serve as a reference point. Example format:</p>
+  <pre>Idea_[Topic]_[Number]</pre>
+  <p>Example: <code>Idea_Fusion_001</code></p>
+  
+  <h2>2. File Naming & Location</h2>
+  <ul>
+    <li>Use <code>.html</code> files named exactly after the ID. E.g. <code>Idea_Fusion_001.html</code></li>
+    <li>Store all idea files in a dedicated folder, e.g. <code>/Ideas-Projects/</code></li>
+    <li>Include a central <code>index.html</code> listing all IDs with links and short descriptions.</li>
+  </ul>
+  
+  <h2>3. Content Structure</h2>
+  <ul>
+    <li><strong>Title:</strong> Clear and descriptive</li>
+    <li><strong>Author:</strong> Name and affiliation</li>
+    <li><strong>Description:</strong> Short summary</li>
+    <li><strong>Detailed content:</strong> Structured with headings</li>
+    <li><strong>Tags:</strong> Keywords or topics for categorization</li>
+  </ul>
+
+  <h2>4. Metadata</h2>
+  <p>Use machine-readable metadata (e.g. JSON-LD with <code>schema.org</code>) embedded in the page header or body to facilitate automated indexing by search engines and AI.</p>
+  
+  <h2>5. Versioning and Updates</h2>
+  <ul>
+    <li>Keep version history within the document or in an associated log</li>
+    <li>Update the central index accordingly</li>
+  </ul>
+
+  <h2>6. Cross-Linking and Clustering</h2>
+  <p>Link related ideas by referencing their unique IDs within the content. Use tags or categories to group ideas thematically.</p>
+  
+  <h2>7. Hosting and Accessibility</h2>
+  <p>Host the files on platforms supporting static sites (e.g. GitHub Pages) to ensure global availability.</p>
+
+  <h2>8. International and Open Standards</h2>
+  <p>Adhere to international open data and semantic web standards to maximize interoperability.</p>
+  
+  <hr />
+  <p><em>Maintained by Martin Wieser, Salzburg, Austria</em></p>
+</body>
+</html>

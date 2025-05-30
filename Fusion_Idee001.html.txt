@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Fusion - Idee 001</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 2em; background: #f9f9f9; color: #222; }
+    h1 { color: #007acc; }
+    .tags { margin: 1em 0; }
+    .tag {
+      display: inline-block;
+      background: #007acc;
+      color: white;
+      padding: 0.2em 0.6em;
+      margin-right: 0.5em;
+      border-radius: 3px;
+      cursor: pointer;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .related {
+      margin-top: 2em;
+      padding-top: 1em;
+      border-top: 1px solid #ccc;
+    }
+    .related a {
+      color: #007acc;
+      text-decoration: none;
+    }
+    .related a:hover {
+      text-decoration: underline;
+    }
+    small {
+      color: #666;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Fusion - Idee 001</h1>
+  <p><strong>Kurzbeschreibung:</strong>  
+  Die Hypothese untersucht, ob kontrollierte Schwingungen von Elektronen und Atomkernen durch unterschiedliche Anregungsquellen (akustisch, mechanisch, elektromagnetisch usw.) zur Initiierung von Kernfusion beitragen können. Eine dynamische Anpassung der Frequenzkurve ist notwendig, da sonst keine Resonanzüberschwingung eintritt.</p>
+
+  <div class="tags">
+    <strong>Tags:</strong>
+    <a href="#Fusion" class="tag" title="Relevanz: 0.9">#Fusion (0.9)</a>
+    <a href="#Resonanz" class="tag" title="Relevanz: 0.8">#Resonanz (0.8)</a>
+    <a href="#Schwingung" class="tag" title="Relevanz: 0.7">#Schwingung (0.7)</a>
+    <a href="#Akustik" class="tag" title="Relevanz: 0.5">#Akustik (0.5)</a>
+    <a href="#Elektromagnetisch" class="tag" title="Relevanz: 0.6">#Elektromagnetisch (0.6)</a>
+  </div>
+
+  <div class="related">
+    <h2>Verwandte Themen</h2>
+    <ul>
+      <li><a href="resonanzkurven.html">Resonanzkurven - Idee 002</a>  
+      <small>- Grundlagen der dynamischen Frequenzanpassung bei schwingenden Systemen.</small></li>
+      
+      <li><a href="akustische_anregung.html">Akustische Anregung - Idee 003</a>  
+      <small>- Nutzung von Schallwellen zur gezielten Erzeugung von Schwingungen in Atomen.</small></li>
+      
+      <li><a href="gravitation_fusion.html">Gravitation und Fusion - Idee 004</a>  
+      <small>- Theoretische Betrachtung des Einflusses von Gravitation auf Fusionsprozesse.</small></li>
+    </ul>
+  </div>
+
+</body>
+</html>

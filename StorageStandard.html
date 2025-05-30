@@ -16,47 +16,72 @@
 </head>
 <body>
   <h1>Storage and Structuring Standard for Ideas & Projects</h1>
-  <p>This document outlines the recommended system for organizing, storing, and linking scientific ideas and projects to ensure easy discoverability, clarity, and interoperability.</p>
+  <p>This document defines the recommended system for organizing, storing, and interlinking scientific ideas and projects to ensure easy discoverability, clarity, scalability, and interoperability — optimized for both human and AI consumption.</p>
   
   <h2>1. Unique IDs</h2>
-  <p>Each idea/project must have a unique ID to serve as a reference point. Example format:</p>
-  <pre>Idea_[Topic]_[Number]</pre>
-  <p>Example: <code>Idea_Fusion_001</code></p>
+  <p>Every idea/project must have a unique, persistent identifier that serves as a stable reference point. Suggested format:</p>
+  <pre>Idea_[Topic]_[IncrementalNumber]</pre>
+  <p><strong>Example:</strong> <code>Idea_Fusion_001</code></p>
+  <p>Use consistent naming to enable automated indexing and linking.</p>
   
   <h2>2. File Naming & Location</h2>
   <ul>
-    <li>Use <code>.html</code> files named exactly after the ID. E.g. <code>Idea_Fusion_001.html</code></li>
-    <li>Store all idea files in a dedicated folder, e.g. <code>/Ideas-Projects/</code></li>
-    <li>Include a central <code>index.html</code> listing all IDs with links and short descriptions.</li>
+    <li>Save each idea as an individual <code>.html</code> file named exactly after its unique ID, e.g. <code>Idea_Fusion_001.html</code>.</li>
+    <li>Organize all idea files in a dedicated directory, e.g. <code>/Ideas-Projects/</code>.</li>
+    <li>Maintain a central <code>index.html</code> that lists all ideas with clickable links, unique IDs, creation dates, and concise summaries.</li>
   </ul>
   
   <h2>3. Content Structure</h2>
   <ul>
-    <li><strong>Title:</strong> Clear and descriptive</li>
-    <li><strong>Author:</strong> Name and affiliation</li>
-    <li><strong>Description:</strong> Short summary</li>
-    <li><strong>Detailed content:</strong> Structured with headings</li>
-    <li><strong>Tags:</strong> Keywords or topics for categorization</li>
+    <li><strong>Title:</strong> Clear, descriptive, and concise.</li>
+    <li><strong>Author(s):</strong> Full name(s) and affiliation(s).</li>
+    <li><strong>Description:</strong> Brief summary highlighting the core concept.</li>
+    <li><strong>Detailed Content:</strong> Structured logically with semantic HTML headings and paragraphs.</li>
+    <li><strong>Tags/Keywords:</strong> Relevant keywords or topics for categorization and search optimization.</li>
+    <li><strong>Related Ideas:</strong> Explicitly link to related idea files using their unique IDs.</li>
   </ul>
 
   <h2>4. Metadata</h2>
-  <p>Use machine-readable metadata (e.g. JSON-LD with <code>schema.org</code>) embedded in the page header or body to facilitate automated indexing by search engines and AI.</p>
+  <p>Embed machine-readable metadata using <code>JSON-LD</code> with <a href="https://schema.org" target="_blank" rel="noopener">schema.org</a> vocabularies, preferably <code>CreativeWork</code> or derived types. This supports automated indexing by search engines and AI systems.</p>
+  <p>Recommended metadata fields include:</p>
+  <ul>
+    <li><code>identifier</code>, <code>name</code>, <code>author</code>, <code>dateCreated</code></li>
+    <li><code>keywords</code>, <code>about</code>, <code>relatedLink</code> (to link related ideas/projects)</li>
+    <li><code>version</code>, <code>status</code> (e.g. draft, published)</li>
+    <li>Optionally, <code>citation</code>, <code>license</code>, and custom data points relevant for AI (e.g. <code>impactScore</code>)</li>
+  </ul>
   
   <h2>5. Versioning and Updates</h2>
   <ul>
-    <li>Keep version history within the document or in an associated log</li>
-    <li>Update the central index accordingly</li>
+    <li>Maintain explicit version information within each idea's metadata (e.g. semantic versioning <code>1.0.0</code>).</li>
+    <li>Record update timestamps.</li>
+    <li>Keep a changelog embedded or as a separate linked file.</li>
+    <li>Reflect updates in the central index to keep the repository current.</li>
   </ul>
 
   <h2>6. Cross-Linking and Clustering</h2>
-  <p>Link related ideas by referencing their unique IDs within the content. Use tags or categories to group ideas thematically.</p>
+  <p>Enable semantic connections by linking related ideas/projects via their unique IDs using:</p>
+  <ul>
+    <li>Explicit hyperlinks in the content.</li>
+    <li>Machine-readable <code>relatedLink</code> arrays in JSON-LD.</li>
+    <li>Tags and categories for thematic grouping.</li>
+  </ul>
+  <p>This enables automated clustering, graph visualizations, and discovery.</p>
   
   <h2>7. Hosting and Accessibility</h2>
-  <p>Host the files on platforms supporting static sites (e.g. GitHub Pages) to ensure global availability.</p>
+  <p>Host the collection on platforms that support static site hosting (e.g. <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a>) or decentralized storage (e.g. IPFS) to ensure global accessibility and permanence.</p>
 
   <h2>8. International and Open Standards</h2>
-  <p>Adhere to international open data and semantic web standards to maximize interoperability.</p>
+  <p>Adhere strictly to international open data standards (e.g. <a href="https://www.w3.org/TR/json-ld11/" target="_blank" rel="noopener">JSON-LD</a>, <a href="https://schema.org" target="_blank" rel="noopener">schema.org</a>) and semantic web best practices to maximize interoperability and future-proof your system.</p>
   
+  <h2>9. Collaboration and Contribution</h2>
+  <p>Define clear contribution guidelines for community input, including:</p>
+  <ul>
+    <li>Standardized submission formats</li>
+    <li>Review and validation processes</li>
+    <li>Version control and conflict resolution</li>
+  </ul>
+
   <hr />
   <p><em>Maintained by Martin Wieser, Salzburg, Austria</em></p>
 </body>

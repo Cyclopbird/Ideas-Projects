@@ -9,6 +9,23 @@
   h1, h2, h3 { color: #005a9c; }
   code { background: #eee; padding: 2px 6px; border-radius: 4px; font-family: monospace; }
   pre { background: #f0f0f0; padding: 10px; border-radius: 5px; overflow-x: auto; }
+<h2>11. ID Conflicts in Decentralized Use (Best Practice)</h2>
+<p>WIPSS is designed as a <strong>decentralized and open</strong> structuring standard. This means that there is <strong>no central registry</strong> for idea or project IDs such as <code>Idea_Gravity_001</code>. As a result, ID <em>collisions can occur</em> if multiple authors independently use the same identifier for different concepts.</p>
+
+<p><strong>WIPSS tolerates this by design</strong>, provided the entries are stored in <strong>separate contexts</strong> (e.g. websites, repositories, namespaces). However, to improve clarity, traceability, and future indexing, the following best practices are recommended:</p>
+
+<ul>
+  <li><strong>Add a short author/institution tag</strong> in the ID.<br />
+    <em>Example:</em><br />
+    <code>Idea_Gravity_MW_001.html</code> &nbsp;&nbsp;<small>(MW = Martin Wieser)</small><br />
+    <code>Idea_Gravity_JPL_001.html</code> &nbsp;&nbsp;<small>(JPL = Jet Propulsion Laboratory)</small>
+  </li>
+  <li><strong>Use rich metadata</strong> (especially <code>author</code>, <code>affiliation</code>, <code>dateCreated</code>) to help systems disambiguate content.</li>
+  <li><strong>Create a local index</strong> (e.g. <code>index.html</code>) that links and describes all items in your own namespace or collection.</li>
+</ul>
+
+<p>These practices ensure compatibility across independent contributors without requiring central governance.</p>
+
   ul { margin-left: 20px; }
   a { color: #007acc; text-decoration: none; }
   a:hover { text-decoration: underline; }
